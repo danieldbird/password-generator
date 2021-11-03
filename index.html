@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator - Daniel Bird</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Password Generator</h1>
+      <form id="form">
+        <div class="input-group">
+          <label for="amount"></label>
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            placeholder="Amount of passwords"
+            class="number"
+          />
+        </div>
+        <div class="input-group">
+          <label for="amount"></label>
+          <input
+            type="number"
+            name="amount"
+            id="length"
+            placeholder="Password length"
+            class="number"
+          />
+        </div>
+        <div id="error" class="input-group hidden">
+          <p class="error">Please password amount and length.</p>
+        </div>
+        <div class="input-group">
+          <input type="submit" value="Generate" class="submit" />
+        </div>
+      </form>
+      <div id="passwords" class="passwords hidden">
+        <h2>Click to copy</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
